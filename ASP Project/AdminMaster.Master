@@ -1,0 +1,42 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="AdminMaster.master.cs" Inherits="ASP_Project.AdminMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Admin</title>
+    <link href="assets/css/admin-layout.css" rel="stylesheet" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+       <!-- Sidebar -->
+        <div class="sidebar">
+            <h3>Admin Panel</h3>
+           <ul>
+                <li><a href="Dashboard.aspx">🏠 Dashboard</a></li>
+                <li><a href="ManageUsers.aspx">👨‍🎓 Manage Students</a></li>
+                <li><a href="ManageCourses.aspx">📚 Manage Courses</a></li>
+                <li><a href="ManageQuizzes.aspx">📝 Manage Quizzes</a></li> <!-- ✅ New Field Added -->
+                <li><a href="Messages.aspx">✉️ Messages</a></li>
+                <li><a href="Reports.aspx">📊 Reports</a></li>
+                <li><a href="Logout.aspx">🚪 Logout</a></li>
+            </ul>
+        </div>
+
+        <!-- Main Content Wrapper -->
+        <div class="main">
+            <!-- Header -->
+            <div class="header">
+                <h2>Welcome, Admin</h2>
+            </div>
+
+            <!-- Page Content -->
+            <div class="content">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

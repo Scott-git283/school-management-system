@@ -1,0 +1,183 @@
+﻿/* ----------------- Base ----------------- */
+body {
+    margin: 0;
+    font-family: "Segoe UI", "Roboto", sans-serif;
+    background: #f4f6f9;
+    color: #333;
+}
+
+/* ----------------- Sidebar ----------------- */
+.sidebar {
+    width: 220px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #2d3e50;
+    color: #fff;
+    padding: 20px 15px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.15);
+}
+
+    .sidebar h3 {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+        color: #fff;
+    }
+
+    .sidebar ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+        .sidebar ul li {
+            margin: 15px 0;
+        }
+
+            .sidebar ul li a {
+                display: block;
+                color: #cfd8dc;
+                text-decoration: none;
+                padding: 10px 15px;
+                border-radius: 6px;
+                transition: 0.3s;
+                font-weight: 500;
+            }
+
+                .sidebar ul li a:hover,
+                .sidebar ul li a.active {
+                    background-color: #1abc9c;
+                    color: #fff;
+                    padding-left: 20px;
+                }
+
+/* ----------------- Header ----------------- */
+.header {
+    margin-left: 220px;
+    background: #fff;
+    padding: 20px 25px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 90;
+}
+
+    .header h2 {
+        margin: 0;
+        font-size: 22px;
+        font-weight: 600;
+        color: #2c3e50;
+    }
+
+/* ----------------- Main Content ----------------- */
+.main {
+    margin-left: 220px;
+    padding: 30px 25px;
+}
+
+.content {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+    min-height: 80vh;
+}
+
+/* ----------------- Cards ----------------- */
+.card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+    .card h3 {
+        margin-top: 0;
+        color: #2c3e50;
+        font-weight: 600;
+    }
+
+/* ----------------- Tables ----------------- */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+    .table th, .table td {
+        padding: 12px 10px;
+        text-align: left;
+        border-bottom: 1px solid #e0e0e0;
+    }
+
+    .table th {
+        background-color: #1abc9c;
+        color: #fff;
+        font-weight: 600;
+    }
+
+    .table tr:nth-child(even) {
+        background-color: #f9f9f9;
+    }
+
+    .table tr:hover {
+        background-color: #e0f7f1;
+    }
+
+/* ----------------- Buttons ----------------- */
+.btn {
+    background-color: #1abc9c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+    .btn:hover {
+        background-color: #16a085;
+    }
+
+/* ----------------- Messages ----------------- */
+.success-msg {
+    color: #27ae60;
+    font-weight: 600;
+}
+
+.error-msg {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 768px) {
+    .sidebar {
+        width: 180px;
+    }
+
+    .header, .main {
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+
+    .main, .header {
+        margin-left: 0;
+    }
+}
