@@ -40,6 +40,7 @@
                                                 <li><a href="courses.aspx">Courses</a></li>
                                                 <li><a href="about.aspx">About</a></li>
                                                 <li><a href="contact.aspx">Contact</a></li>
+                                                <li><a href="Dashboard.aspx">Dashboard</a></li>
                                                 <!-- Button -->
                                                 <li class="button-header margin-left "><a href="logout.aspx" id="lnkLogout" runat="server" onclick="lnkLogout_Click" class="btn">Logout</a></li>
                                                 <!--- <li class="button-header"><a href="login.aspx" class="btn btn3">Log in</a></li> -->

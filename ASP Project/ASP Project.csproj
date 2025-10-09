@@ -128,6 +128,7 @@
     <Content Include="assets\css\slicknav.css" />
     <Content Include="assets\css\style.css" />
     <Content Include="assets\css\themify-icons.css" />
+    <Content Include="Dashboard.aspx" />
     <Content Include="logout.aspx" />
     <Content Include="ManageCourses.aspx" />
     <Content Include="ManageQuizzes.aspx" />
@@ -514,6 +515,13 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Dashboard.aspx.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Dashboard.aspx.designer.cs">
+      <DependentUpon>Dashboard.aspx</DependentUpon>
+    </Compile>
     <Compile Include="logout.aspx.cs">
       <DependentUpon>logout.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
